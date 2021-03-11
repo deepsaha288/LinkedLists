@@ -53,4 +53,15 @@ public class LinkedListTest {
         list.deleteFirstElement();
         list.displayList();
     }
+
+    @Test
+    public void deleteLastElement() {
+        LinkedList list = new LinkedList();
+        list.addAtEnd(56);
+        list.addAtStart(30);
+        list.addAtEnd(70);
+        list.displayList();
+        list.deleteLastElement();
+        list.displayList();
+    }
 }
