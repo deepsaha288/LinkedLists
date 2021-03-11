@@ -87,4 +87,16 @@ public class LinkedListTest {
         list.displayList();
         Assertions.assertEquals(40,output);
     }
+
+    @Test
+    public void deleteGivenNode(){
+        LinkedList list = new LinkedList();
+        list.addNode(56);
+        list.addNode(30);
+        list.addNode(70);
+        System.out.println("After deleting");
+        int result=list.deleteGivenNode(30);
+        list.displayList();
+        Assertions.assertEquals(30,result);
+    }
 }
