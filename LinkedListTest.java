@@ -42,4 +42,15 @@ public class LinkedListTest {
         list.addAtmiddle(30,1);
         list.displayList();
     }
+
+    @Test
+    public void deleteFirstElement() {
+        LinkedList list = new LinkedList();
+        list.addAtEnd(56);
+        list.addAtStart(30);
+        list.addAtEnd(70);
+        list.displayList();
+        list.deleteFirstElement();
+        list.displayList();
+    }
 }
