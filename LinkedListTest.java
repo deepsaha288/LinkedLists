@@ -32,4 +32,14 @@ public class LinkedListTest {
         list.addAtEnd(70);
         list.displayList();
     }
+
+    @Test
+    public void addAtMiddle() {
+        LinkedList list = new LinkedList();
+        list.addAtEnd(56);
+        list.addAtEnd(70);
+        list.displayList();
+        list.addAtmiddle(30,1);
+        list.displayList();
+    }
 }
