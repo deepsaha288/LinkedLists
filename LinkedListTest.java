@@ -12,13 +12,24 @@ public class LinkedListTest {
         list.displayList();
 
     }
-   @Test
+
+    @Test
     public void addAtStart() {
         LinkedList list = new LinkedList();
         System.out.println("insert  node at first position");
         list.addAtStart(56);
         list.addAtStart(30);
         list.addAtStart(70);
+        list.displayList();
+    }
+
+    @Test
+    public void addAtEnd() {
+        LinkedList list = new LinkedList();
+        System.out.println("insert  node at last position");
+        list.addAtEnd(56);
+        list.addAtEnd(30);
+        list.addAtEnd(70);
         list.displayList();
     }
 }
