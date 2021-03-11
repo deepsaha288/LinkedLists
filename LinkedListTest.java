@@ -75,4 +75,16 @@ public class LinkedListTest {
         int output =list.searchNode(30);
         Assertions.assertEquals(30,output);
     }
+    @Test
+    public void insertAfter() {
+        LinkedList list = new LinkedList();
+        list.addAtEnd(56);
+        list.addAtStart(30);
+        list.addAtEnd(70);
+        list.displayList();
+        System.out.println("Inserting after 30");
+        int output=list.insertAfter(list.head.Next,40);
+        list.displayList();
+        Assertions.assertEquals(40,output);
+    }
 }
