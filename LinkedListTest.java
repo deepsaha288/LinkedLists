@@ -64,4 +64,15 @@ public class LinkedListTest {
         list.deleteLastElement();
         list.displayList();
     }
+
+    @Test
+    public void searchNodeEx() {
+        LinkedList list = new LinkedList();
+        list.addAtEnd(56);
+        list.addAtStart(30);
+        list.addAtEnd(70);
+        list.displayList();
+        int output =list.searchNode(30);
+        Assertions.assertEquals(30,output);
+    }
 }
